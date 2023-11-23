@@ -2,9 +2,9 @@
 
 // db_connect($db): function to connect to the databse on phpmyadmin
 function db_connect($db) {
-	$hostname = "localhost";
-	$username = "webuser";
-	$password = "A_H8M@Feq[WvM2y8";
+	$hostname = "XXXX";
+	$username = "XXXX";
+	$password = "XXXX";
 	
 	$dblink = new mysqli($hostname, $username, $password, $db);
 	if (mysqli_connect_errno()) {
