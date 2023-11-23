@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+.banner {
+	background-color:#4472C4;
+	color:#FFFFFF;
+	text-align:center;
+	}
+.menu_bar{
+	background-color:#D9E1F2;
+	font-weight:bold;
+	text-align:center;
+	}
+.menu_bar a:link{
+	text-decoration:none;
+	}
