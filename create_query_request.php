@@ -3,9 +3,9 @@
 displayErrors();
 
 // creating a session
-$username = "yct482";
+$username = "XXXX";
 $uid = $username;
-$password = "kb3r7XBL4G9F6pdh";
+$password = "XXXX";
 $data = "username=".$username."&password=".$password;
 $result = createSession($data);
 
