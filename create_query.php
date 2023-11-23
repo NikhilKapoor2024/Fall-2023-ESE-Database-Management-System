@@ -2,8 +2,8 @@
 
 displayErrors();
 
-$username = "yct482";
-$password = "kb3r7XBL4G9F6pdh";
+$username = "XXXX";
+$password = "XXXX";
 $data = "username=".$username."&password=".$password;
 
 // initializing a session from a cURL
