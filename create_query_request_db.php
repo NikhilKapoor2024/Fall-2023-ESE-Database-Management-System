@@ -8,9 +8,9 @@ displayErrors();
 $dblink = db_connect("docstorage");
 
 // creating a session and logging the time it was created
-$username = "yct482";
+$username = "XXXX";
 $uid = $username;
-$password = "kb3r7XBL4G9F6pdh";
+$password = "XXXX";
 $data = "username=".$username."&password=".$password;
 $result = createSession($data);
 $cinfo = json_decode($result, true);
