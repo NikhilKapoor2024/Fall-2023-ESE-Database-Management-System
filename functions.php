@@ -8,7 +8,7 @@ function displayErrors() {
 }
 // createSession($data): creates the session and returns the result of the cURL execution
 function createSession($data) {
-	$ch = curl_init('https://cs4743.professorvaladez.com/api/create_session');
+	$ch = curl_init('.../api/create_session');
 	curl_setopt($ch, CURLOPT_POST, 1);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -30,7 +30,7 @@ function createSession($data) {
 
 // closeSession($cinfo): closes the session by getting the sid
 function closeSession($data) {
-	$ch = curl_init('https://cs4743.professorvaladez.com/api/close_session');
+	$ch = curl_init('.../api/close_session');
 	curl_setopt($ch, CURLOPT_POST, 1);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -51,7 +51,7 @@ function closeSession($data) {
 
 //clearSID(): clears the session with the SID
 function clearSID($data) {
-	$ch = curl_init('https://cs4743.professorvaladez.com/api/clear_session');
+	$ch = curl_init('.../api/clear_session');
 	curl_setopt($ch, CURLOPT_POST, 1);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -76,7 +76,7 @@ function createQuery($cinfo, $username) {
 	// NOTE: Try and make 55-70 it's own function
 	if ($cinfo[0] == "Status: OK" && $cinfo[1] == "MSG: Session Created") {
 		$data = "uid=".$username."&sid=".$cinfo[2];
-		$ch = curl_init('https://cs4743.professorvaladez.com/api/query_files');
+		$ch = curl_init('.../api/query_files');
 		curl_setopt($ch, CURLOPT_POST, 1);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -105,7 +105,7 @@ function createQuery($cinfo, $username) {
 // createQueryRequest($data): This function calls the request_file API to get the actual file
 // and store them into a db
 function createQueryRequest($data) {
-	$ch = curl_init('https://cs4743.professorvaladez.com/api/request_file');
+	$ch = curl_init('.../api/request_file');
 	curl_setopt($ch, CURLOPT_POST, 1);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
