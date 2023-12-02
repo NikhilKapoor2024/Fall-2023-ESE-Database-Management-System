@@ -3,8 +3,8 @@
 displayErrors();
 
 // creating data variable to hold username and password as a string
-$username = "yct482";
-$password = "kb3r7XBL4G9F6pdh";
+$username = "XXXXXX";
+$password = "XXXXXX";
 $data = "username=".$username."&password=".$password;
 
 // initializing a session from a cURL
