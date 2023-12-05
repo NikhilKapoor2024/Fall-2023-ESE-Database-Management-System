@@ -9,3 +9,4 @@ As part of my Enterprise Software Engineering class of my Fall 2023 semester, ou
 ### Notes:
 * The **assets** folder holds the CSS and JavaScript Bootstrap used to format the UI.
 * The **API Paths** and other private information has been edited out
+* All cronjobs stopped being functional as of **Thursday, November 30th, at 11:15pm**.
