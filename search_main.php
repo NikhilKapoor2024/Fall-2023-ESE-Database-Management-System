@@ -23,6 +23,7 @@
 	echo '<p><a class="btn btn-info btn-block" href="search_loantype.php">Search by Loan Type</a></p>';
 	echo '<p><a class="btn btn-info btn-block" href="search_filetype.php">Search by File Type</a></p>';
 	echo '<p><a class="btn btn-info btn-block" href="search_datecreated.php">Search by Date Created</a></p>';
+	echo '<p><a class="btn btn-info btn-block" href="search_all.php">List all Files</a></p>';
 	echo '</div>'; // end of panel-body
 	echo '</div>'; // end of page-inner
 ?>
