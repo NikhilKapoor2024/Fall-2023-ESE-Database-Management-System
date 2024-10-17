@@ -70,7 +70,7 @@
 		$match_sql = "SELECT `auto_id` FROM `months` WHERE `auto_id` = '$monthCreated'";
 		$result = $dblink->query($match_sql);
 		if ($result->num_rows <= 0) {
-			redirect('XXXX');
+			redirect('XXXX/search_loantype.php?msg=noResult');
 		}
 		else { // showcase table of the files located
 			// get the files
@@ -89,7 +89,7 @@
 				echo '<td>'.$data['loan_type'].'</td>';
 				echo '<td>'.$data['date_created'].'</td>';
 				echo '<td>'.$data['file_type'].'</td>';
-				echo '<td><a href="XXXX='.$data['auto_id'].'" target="_blank">View File</td>';
+				echo '<td><a href="XXXX/view_file.php?fid='.$data['auto_id'].'" target="_blank">View File</td>';
 				echo '</tr>';
 			}
 			
