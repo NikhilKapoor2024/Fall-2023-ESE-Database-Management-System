@@ -85,7 +85,7 @@ allow users to upload an existing document to the DB.
 		$loanNum = $_POST['loanNum'];
 		if (preg_match("/[0-9]{8}/", $loanNum) == 0) {
 			echo '<div><h3>ERROR: invalid loan number.</h3></div>';
-			redirect("https://ec2-3-15-27-253.us-east-2.compute.amazonaws.com/upload_new.php?msg=err-invalidLoanNum");
+			redirect("XXXX/upload_new.php?msg=err-invalidLoanNum");
 		}
 		$docType = $_POST['docType'];
 		$tmpName = $_FILES['userfile']['tmp_name']; // file name
@@ -93,7 +93,7 @@ allow users to upload an existing document to the DB.
 		$fileType = $_FILES['userfile']['type']; // file type (pdf);
 		if (strpos($fileType, 'pdf') == false) {
 			echo '<div><h3>ERROR: invalid file type.</h3></div>';
-			redirect("https://ec2-3-15-27-253.us-east-2.compute.amazonaws.com/upload_new.php?msg=err-invalidFileType");
+			redirect("XXXX/upload_new.php?msg=err-invalidFileType");
 		}
 		
 		// reading the file
@@ -115,7 +115,7 @@ allow users to upload an existing document to the DB.
 			die ("<p>Something went wrong with $scnd_sql</p>".$dblink->errno);
 		
 		echo '<div><h3>File successfully uploaded!</h3></div>';
-		redirect("https://ec2-3-15-27-253.us-east-2.compute.amazonaws.com/upload_main.php?msg=success");
+		redirect("XXXX/upload_main.php?msg=success");
 	}
 ?>
 </body>
